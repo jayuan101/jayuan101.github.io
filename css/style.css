@@ -4,43 +4,69 @@
 
 /* Large screens such as TV */
 @media only screen and (min-width: 1824px) {
+    main {
+        padding: 40px;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-
 @media (max-width: 1400px) {
+    main {
+        padding: 30px;
+    }
 }
 
 @media (max-width: 1200px) {
+    main {
+        padding: 25px;
+    }
 }
 
-/* IPad Pro */
+/* iPad Pro */
 @media (max-width: 1024px) {
+    main {
+        padding: 20px;
+    }
 }
 
-/*  Large devices (desktops, 992px and up) */
-
+/* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
+    header {
+        font-size: 1.2em;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
-
 @media only screen and (max-width: 768px) {
+    header {
+        font-size: 1em;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
-
 @media only screen and (max-width: 576px) {
+    header {
+        font-size: 0.9em;
+    }
 }
 
 /* iPhoneX, iPhone 6,7,8 */
 @media only screen and (max-width: 375px) {
+    header {
+        font-size: 0.8em;
+    }
 }
 
 /* Galaxy S5, Moto G4 */
 @media only screen and (max-width: 360px) {
+    header {
+        font-size: 0.7em;
+    }
 }
 
 /* iPhone 5 or before */
 @media only screen and (max-width: 320px) {
+    header {
+        font-size: 0.6em;
+    }
 }
