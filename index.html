@@ -1,114 +1,48 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portafolio — Ja-Yuan Pendley — Data Analyst</title>
-  <meta name="description" content="Portafolio de Data Analyst: proyectos Tableau, ETL, Streamlit, GitHub y CV — Ja-Yuan Pendley." />
+  <title>Portfolio — Ja-Yuan Pendley — Data Analyst</title>
+  <meta name="description" content="Data Analyst Portfolio: Tableau projects, ETL pipelines, Streamlit apps, GitHub, and Resume — Ja-Yuan Pendley." />
   <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Simple icon set (replace with local if prefieres) -->
-  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
-
-  <style>
-    :root{
-      --bg:#0f1724;
-      --card:#0b1220;
-      --muted:#94a3b8;
-      --accent:#7c3aed;
-      --glass: rgba(255,255,255,0.03);
-      --radius:16px;
-      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071021 0%, #0b1220 60%);color:#e6eef8}
-    .container{max-width:1100px;margin:0 auto;padding:28px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{
-      width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#4c1d95);display:flex;align-items:center;justify-content:center;font-weight:700;color:white;font-size:20px;box-shadow:0 6px 18px rgba(124,58,237,0.16)
-    }
-    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-weight:600}
-    nav a:hover{color:white}
-
-    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:28px}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:22px;border-radius:var(--radius);box-shadow: 0 10px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
-    h1{font-size:28px;margin:0 0 8px 0}
-    p.lead{color:var(--muted);margin:0 0 16px 0;font-size:15px;line-height:1.5}
-
-    .cta{display:flex;gap:12px;margin-top:12px}
-    .btn{
-      display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;border:0;font-weight:700;cursor:pointer;text-decoration:none;
-      background:linear-gradient(90deg,var(--accent),#5b21b6);color:white;box-shadow:0 8px 20px rgba(92,33,182,0.2)
-    }
-    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);font-weight:600}
-
-    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-    .skill{background:var(--glass);padding:8px 10px;border-radius:999px;font-weight:600;color:var(--muted);font-size:13px}
-
-    /* projects */
-    .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:20px}
-    .project{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);border:1px solid rgba(255,255,255,0.03)}
-    .project h3{margin:0 0 6px 0;font-size:16px}
-    .project p{margin:0 0 10px;color:var(--muted);font-size:13px}
-    .project .links{display:flex;gap:8px;flex-wrap:wrap}
-
-    /* Embeds */
-    .embed{height:360px;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.03);background:#081226}
-
-    /* contact */
-    .contact-grid{display:grid;grid-template-columns:1fr 380px;gap:18px;margin-top:20px}
-    label{display:block;font-size:13px;margin-bottom:6px;color:var(--muted)}
-    input[type="text"],input[type="email"],textarea,select{
-      width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit
-    }
-    textarea{min-height:120px;resize:vertical}
-    footer{text-align:center;color:var(--muted);margin:38px 0 120px 0;font-size:14px}
-
-    /* responsive */
-    @media (max-width:980px){
-      .hero{grid-template-columns:1fr}
-      .projects-grid{grid-template-columns:1fr}
-      .contact-grid{grid-template-columns:1fr}
-    }
-
-    /* small footer badges */
-    .links-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-    .small{font-size:13px;color:var(--muted)}
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
+    <!-- HEADER -->
     <header>
       <div class="brand">
         <div class="logo" aria-hidden="true">JY</div>
         <div>
           <div style="font-weight:700">Ja-Yuan Pendley</div>
-          <div style="font-size:13px;color:var(--muted)">Data Analyst • ETL • Visualización • ML básico</div>
+          <div style="font-size:13px;color:var(--muted)">Data Analyst • ETL • Visualization</div>
         </div>
       </div>
 
-      <nav aria-label="Navegación principal">
-        <a href="#proyectos">Proyectos</a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
         <a href="#tableau">Tableau</a>
         <a href="#etl">ETL</a>
         <a href="#streamlit">Streamlit</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <!-- HERO -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="card">
-        <h1 id="hero-title">Hola — soy Ja-Yuan, Data Analyst</h1>
+        <h1 id="hero-title">Hi — I’m Ja-Yuan, a Data Analyst</h1>
         <p class="lead">
-          Me especializo en limpieza y transformación de datos (ETL), visualización con Tableau, dashboards interactivos y apps con Streamlit. Trabajo con Python, SQL y pipelines para convertir datos en decisiones.
+          I specialize in data cleaning, ETL pipelines, interactive dashboards with Tableau, and building data apps with Streamlit. Skilled in Python, SQL, and analytics workflows.
         </p>
 
-        <div class="skills" aria-hidden="false">
+        <div class="skills">
           <span class="skill">Python</span>
           <span class="skill">Pandas</span>
           <span class="skill">SQL</span>
@@ -118,109 +52,87 @@
         </div>
 
         <div class="cta">
-          <a class="btn" href="https://github.com/PLACEHOLDER_GITHUB" target="_blank" rel="noopener">Ver mi GitHub</a>
-          <a class="btn secondary" href="https://raw.githubusercontent.com/PLACEHOLDER_GITHUB/MAIN/Ja-Yuan_Pendley_Resume.pdf" target="_blank" rel="noopener">Descargar CV</a>
+          <a class="btn" href="https://github.com/PLACEHOLDER_GITHUB" target="_blank" rel="noopener">View GitHub</a>
+          <a class="btn secondary" href="assets/Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
         </div>
 
         <div class="small links-row" style="margin-top:14px">
-          <div title="Ubicación">📍 Bogotá, Colombia</div>
-          <div>✉️ <a href="mailto:tu-email@ejemplo.com" style="color:var(--muted);text-decoration:none">tu-email@ejemplo.com</a></div>
+          <div>📍 Location: United States</div>
+          <div>✉️ <a href="mailto:your-email@example.com" style="color:var(--muted);text-decoration:none">your-email@example.com</a></div>
         </div>
       </div>
 
-      <!-- RIGHT COLUMN: Snapshot / resumen -->
+      <!-- RIGHT COLUMN -->
       <aside>
-        <div class="card" style="display:flex;flex-direction:column;gap:12px">
+        <div class="card">
           <div style="display:flex;align-items:center;justify-content:space-between">
             <div>
-              <div style="font-weight:700">Proyectos destacados</div>
-              <div class="small" style="margin-top:6px;color:var(--muted)">Tableau, ETL, Streamlit y GitHub</div>
+              <div style="font-weight:700">Featured Projects</div>
+              <div class="small" style="margin-top:6px;color:var(--muted)">Tableau, ETL, Streamlit, GitHub</div>
             </div>
             <div style="text-align:right">
               <div style="font-weight:700;font-size:20px">12+</div>
-              <div class="small">Proyectos</div>
+              <div class="small">Projects</div>
             </div>
           </div>
-
-          <div style="display:flex;gap:8px;flex-wrap:wrap">
-            <div style="flex:1">
-              <div class="small" style="color:var(--muted)">Resumen rápido</div>
-              <ul style="margin:8px 0 0 18px;color:var(--muted)">
-                <li>ETL automatizados (Airflow / scripts)</li>
-                <li>Dashboards en Tableau</li>
-                <li>Apps con Streamlit para prototipos</li>
-              </ul>
-            </div>
-          </div>
-
+          <ul style="margin:12px 0 0 18px;color:var(--muted)">
+            <li>Automated ETL pipelines</li>
+            <li>Interactive Tableau dashboards</li>
+            <li>Streamlit data apps</li>
+          </ul>
           <div style="display:flex;gap:8px;justify-content:space-between;align-items:center;margin-top:8px">
-            <a class="btn" href="#proyectos">Ver proyectos</a>
-            <a class="btn secondary" href="https://jayuan101.github.io/Portfoilo/" target="_blank" rel="noopener">Ver versión actual</a>
+            <a class="btn" href="#projects">See Projects</a>
           </div>
         </div>
       </aside>
     </section>
 
-    <!-- Projects -->
-    <section id="proyectos" style="margin-top:28px">
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <h2 style="margin:0">Proyectos</h2>
-        <div class="small" style="color:var(--muted)">Selecciona para ver detalles, repositorio o demo</div>
-      </div>
-
+    <!-- PROJECTS -->
+    <section id="projects" style="margin-top:28px">
+      <h2>Projects</h2>
       <div class="projects-grid">
-        <!-- Project 1 -->
-        <article class="project" aria-labelledby="p1">
-          <h3 id="p1">Pipeline ETL — Ingesta y transformación</h3>
-          <p>Automatización de pipeline que ingiere CSVs, transforma y carga a Postgres. Incluye tests y reportes.</p>
+        <article class="project">
+          <h3>ETL Pipeline — Data Ingestion</h3>
+          <p>Automated ETL pipeline that ingests CSVs, transforms data, and loads into Postgres with testing and reports.</p>
           <div class="links">
-            <a class="btn secondary" href="https://github.com/PLACEHOLDER_GITHUB/etl-repo" target="_blank" rel="noopener">Repositorio</a>
-            <a class="btn" href="#" onclick="openModal('etl1')">Detalles</a>
+            <a class="btn secondary" href="https://github.com/PLACEHOLDER_GITHUB/etl-repo" target="_blank">GitHub</a>
           </div>
         </article>
 
-        <!-- Project 2 -->
-        <article class="project" aria-labelledby="p2">
-          <h3 id="p2">Dashboard Tableau — Ventas King County</h3>
-          <p>Dashboard interactivo con filtros, mapas y series de tiempo para análisis de ventas.</p>
+        <article class="project">
+          <h3>Tableau Dashboard — King County Sales</h3>
+          <p>Interactive Tableau dashboard with filters, maps, and time series for sales analytics.</p>
           <div class="links">
-            <a class="btn secondary" href="https://public.tableau.com/views/PLACEHOLDER_TABLEAU" target="_blank" rel="noopener">Ver en Tableau Public</a>
-            <a class="btn" href="#tableau" aria-controls="tableau">Embeber</a>
+            <a class="btn secondary" href="https://public.tableau.com/views/PLACEHOLDER_TABLEAU" target="_blank">Tableau Public</a>
           </div>
         </article>
 
-        <!-- Project 3 -->
-        <article class="project" aria-labelledby="p3">
-          <h3 id="p3">App Streamlit — Explorador de datos</h3>
-          <p>App interactiva para explorar datasets, filtrar y descargar muestras — ideal para deploy rápido.</p>
+        <article class="project">
+          <h3>Streamlit App — Data Explorer</h3>
+          <p>Interactive Streamlit app to explore datasets, filter, and download samples.</p>
           <div class="links">
-            <a class="btn secondary" href="https://share.streamlit.io/PLACEHOLDER_STREAMLIT/app" target="_blank" rel="noopener">Abrir App</a>
-            <a class="btn" href="#streamlit">Embeber</a>
+            <a class="btn secondary" href="https://share.streamlit.io/PLACEHOLDER_STREAMLIT/app" target="_blank">Live App</a>
           </div>
         </article>
 
-        <!-- Project 4 -->
-        <article class="project" aria-labelledby="p4">
-          <h3 id="p4">Analítica — Análisis de cohortes</h3>
-          <p>Estudio de retención por cohortes usando SQL y visualizaciones en Tableau.</p>
+        <article class="project">
+          <h3>Cohort Analysis</h3>
+          <p>SQL-based cohort analysis with retention visualization in Tableau.</p>
           <div class="links">
-            <a class="btn secondary" href="https://github.com/PLACEHOLDER_GITHUB/cohorts-analysis" target="_blank" rel="noopener">Repositorio</a>
-            <a class="btn" href="#">Docs</a>
+            <a class="btn secondary" href="https://github.com/PLACEHOLDER_GITHUB/cohort-analysis" target="_blank">GitHub</a>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- Tableau Embed -->
+    <!-- TABLEAU EMBED -->
     <section id="tableau" style="margin-top:30px">
-      <h2>Tableau — Visualización embebida</h2>
-      <p class="small" style="color:var(--muted)">Aquí puedes embeber un dashboard de Tableau Public. Reemplaza el "src" por tu link de Tableau.</p>
-
-      <div class="card" style="margin-top:12px">
-        <div class="embed" role="region" aria-label="Tableau embed">
-          <!-- EJEMPLO: reemplaza src por el link embed de tu dashboard de Tableau Public -->
+      <h2>Tableau Embed</h2>
+      <p class="small" style="color:var(--muted)">Replace the iframe src with your Tableau Public embed link.</p>
+      <div class="card">
+        <div class="embed">
           <iframe
-            title="Tableau dashboard"
+            title="Tableau Dashboard"
             src="https://public.tableau.com/views/PLACEHOLDER_TABLEAU_EMBED"
             style="width:100%;height:100%;border:0;"
             loading="lazy"
@@ -230,108 +142,73 @@
       </div>
     </section>
 
-    <!-- ETL / Tech stack -->
+    <!-- ETL -->
     <section id="etl" style="margin-top:30px">
       <h2>ETL & Pipelines</h2>
-      <p class="small" style="color:var(--muted)">Descripción de herramientas, procesos y ejemplos de scripts y DAGs.</p>
-
-      <div class="card" style="margin-top:12px">
-        <h3 style="margin-top:0">Resumen técnico</h3>
+      <p class="small" style="color:var(--muted)">Summary of ETL workflows, tools, and pipeline design.</p>
+      <div class="card">
         <ul style="color:var(--muted)">
-          <li>Ingesta: S3 / FTP / APIs</li>
-          <li>Transformación: Python (Pandas), SQL</li>
-          <li>Orquestación: Airflow / cron</li>
-          <li>Almacenamiento: Postgres / BigQuery</li>
+          <li>Ingestion: APIs, CSV, S3</li>
+          <li>Transformation: Python (Pandas), SQL</li>
+          <li>Orchestration: Airflow / cron</li>
+          <li>Storage: PostgreSQL / BigQuery</li>
         </ul>
-
-        <div style="margin-top:12px">
-          <a class="btn" href="https://github.com/PLACEHOLDER_GITHUB/etl-repo" target="_blank" rel="noopener">Ver código ETL</a>
-          <a class="btn secondary" href="docs/etl_documentation.pdf" target="_blank" rel="noopener">Documento técnico</a>
-        </div>
       </div>
     </section>
 
-    <!-- Streamlit embed -->
+    <!-- STREAMLIT EMBED -->
     <section id="streamlit" style="margin-top:30px">
-      <h2>Streamlit — Apps interactivas</h2>
-      <p class="small" style="color:var(--muted)">Si tu app Streamlit está desplegada en share.streamlit.io o en un servidor, puedes embeberla aquí con un iframe.</p>
-
-      <div class="card" style="margin-top:12px">
-        <div class="embed" role="region" aria-label="Streamlit embed">
-          <!-- Reemplaza por el URL de tu app; algunos hosts (CORS) no permiten embed en iframe -->
+      <h2>Streamlit Apps</h2>
+      <p class="small" style="color:var(--muted)">If your Streamlit app is hosted, you can embed it here.</p>
+      <div class="card">
+        <div class="embed">
           <iframe
-            title="Streamlit app"
+            title="Streamlit App"
             src="https://share.streamlit.io/PLACEHOLDER_STREAMLIT/app"
             style="width:100%;height:100%;border:0;"
-            loading="lazy"
-            sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
-            >
+            loading="lazy">
           </iframe>
-        </div>
-
-        <div style="margin-top:12px;display:flex;gap:10px">
-          <a class="btn" href="https://share.streamlit.io/PLACEHOLDER_STREAMLIT/app" target="_blank" rel="noopener">Abrir app</a>
-          <a class="btn secondary" href="https://github.com/PLACEHOLDER_GITHUB/streamlit-app" target="_blank" rel="noopener">Repo Streamlit</a>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contacto" style="margin-top:30px">
-      <h2>Contacto</h2>
-      <p class="small" style="color:var(--muted)">¿Interesado en colaborar? Escríbeme — puedes usar el formulario o enviarme un email directo.</p>
-
+    <!-- CONTACT -->
+    <section id="contact" style="margin-top:30px">
+      <h2>Contact</h2>
       <div class="contact-grid">
-        <form class="card" action="https://formspree.io/f/PLACEHOLDER_FORM_ID" method="POST" aria-label="Formulario de contacto">
-          <!-- Si no usas Formspree, pon action="mailto:tu-email@ejemplo.com" (menos recomendado) -->
-          <label for="name">Nombre</label>
-          <input id="name" name="name" type="text" placeholder="Tu nombre" required>
+        <form class="card" action="https://formspree.io/f/PLACEHOLDER_FORM_ID" method="POST">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
 
           <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="tu@ejemplo.com" required>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
 
-          <label for="message">Mensaje</label>
-          <textarea id="message" name="message" placeholder="Cuéntame sobre el proyecto..." required></textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
 
           <div style="display:flex;gap:10px;margin-top:12px;justify-content:flex-end">
-            <button class="btn" type="submit">Enviar</button>
-            <button class="btn secondary" type="reset">Borrar</button>
+            <button class="btn" type="submit">Send</button>
+            <button class="btn secondary" type="reset">Clear</button>
           </div>
         </form>
 
-        <div class="card" aria-hidden="false">
-          <h3 style="margin-top:0">Contacto directo</h3>
-          <p class="small" style="color:var(--muted)"><strong>Email:</strong> <a href="mailto:tu-email@ejemplo.com" style="color:var(--muted)">tu-email@ejemplo.com</a></p>
-          <p class="small" style="color:var(--muted)"><strong>GitHub:</strong> <a href="https://github.com/PLACEHOLDER_GITHUB" target="_blank" rel="noopener" style="color:var(--muted)">github.com/PLACEHOLDER_GITHUB</a></p>
-          <p class="small" style="color:var(--muted)"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/PLACEHOLDER" target="_blank" rel="noopener" style="color:var(--muted)">linkedin.com/in/PLACEHOLDER</a></p>
-
-          <h4 style="margin-top:16px">Descargas</h4>
-          <div style="display:flex;gap:8px;margin-top:8px">
-            <a class="btn" href="https://raw.githubusercontent.com/PLACEHOLDER_GITHUB/MAIN/Ja-Yuan_Pendley_Resume.pdf" target="_blank" rel="noopener">Descargar CV</a>
-            <a class="btn secondary" href="https://github.com/PLACEHOLDER_GITHUB" target="_blank" rel="noopener">Ver repositorios</a>
-          </div>
+        <div class="card">
+          <h3>Direct Contact</h3>
+          <p class="small"><strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+          <p class="small"><strong>GitHub:</strong> <a href="https://github.com/PLACEHOLDER_GITHUB" target="_blank">github.com/PLACEHOLDER_GITHUB</a></p>
+          <p class="small"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/PLACEHOLDER" target="_blank">linkedin.com/in/PLACEHOLDER</a></p>
         </div>
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-      Hecho con ❤️ • © <span id="year"></span> Ja-Yuan Pendley — <span class="small">Data Analyst</span>
+      Built with ❤️ • © <span id="year"></span> Ja-Yuan Pendley — Data Analyst
     </footer>
   </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Modal demo (simple) para detalles de proyecto — sustituir por modal real si quieres
-    function openModal(id){
-      alert("Aquí podrías abrir un modal con más detalles del proyecto: " + id + "\n\nReemplaza con tu propio modal o página de proyecto.");
-    }
-
-    // Mejoras opcionales:
-    // - Agrega Google Analytics o Plausible
-    // - Reemplaza PLACEHOLDER_* con tus URLs reales
-    // - Para embeber Tableau usa el código de 'Share' > 'Embed' que provee Tableau Public
-    // - Para Streamlit: algunos hostings no permiten iframe por CORS; si no carga, deja el link directo.
   </script>
 </body>
 </html>
