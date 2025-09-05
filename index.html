@@ -137,4 +137,158 @@
             </div>
             <div style="text-align:right">
               <div style="font-weight:700;font-size:20px">12+</div>
-              <div class="smal
+              <div class="small">Projects</div>
+            </div>
+          </div>
+
+          <ul style="margin:8px 0 0 18px;color:var(--muted)">
+            <li>Automated ETL pipelines</li>
+            <li>Interactive Tableau dashboards</li>
+            <li>Streamlit data apps</li>
+          </ul>
+
+          <div style="display:flex;gap:8px;justify-content:space-between;align-items:center;margin-top:8px">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn secondary" href="https://jayuan101.github.io/Portfoilo/" target="_blank" rel="noopener">Current Version</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" style="margin-top:28px">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project">
+          <h3>ETL Pipeline — Data Ingestion</h3>
+          <p>Automated pipeline that ingests CSVs, transforms data, and loads into Postgres. Includes tests and reports.</p>
+          <div class="links">
+            <a class="btn secondary" href="https://github.com/PLACEHOLDER_GITHUB/etl-repo" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Tableau Dashboard — King County Sales</h3>
+          <p>Interactive dashboard with filters, maps, and time series for sales analysis.</p>
+          <div class="links">
+            <a class="btn secondary" href="https://public.tableau.com/views/PLACEHOLDER_TABLEAU" target="_blank" rel="noopener">View on Tableau Public</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Streamlit App — Data Explorer</h3>
+          <p>Interactive Streamlit app to explore datasets, filter, and download samples — ideal for rapid prototyping.</p>
+          <div class="links">
+            <a class="btn secondary" href="https://share.streamlit.io/PLACEHOLDER_STREAMLIT/app" target="_blank" rel="noopener">Open App</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Cohort Analysis</h3>
+          <p>Retention study by cohorts using SQL and Tableau visualizations.</p>
+          <div class="links">
+            <a class="btn secondary" href="https://github.com/PLACEHOLDER_GITHUB/cohorts-analysis" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Tableau Embed -->
+    <section id="tableau" style="margin-top:30px">
+      <h2>Tableau — Embedded Dashboard</h2>
+      <p class="small" style="color:var(--muted)">Replace the src below with your Tableau Public embed link.</p>
+      <div class="card" style="margin-top:12px">
+        <div class="embed">
+          <iframe
+            title="Tableau dashboard"
+            src="https://public.tableau.com/views/PLACEHOLDER_TABLEAU_EMBED"
+            style="width:100%;height:100%;border:0;"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ETL -->
+    <section id="etl" style="margin-top:30px">
+      <h2>ETL & Pipelines</h2>
+      <p class="small" style="color:var(--muted)">Overview of tools, workflows, and pipeline design.</p>
+      <div class="card" style="margin-top:12px">
+        <h3 style="margin-top:0">Tech Summary</h3>
+        <ul style="color:var(--muted)">
+          <li>Ingestion: APIs, S3, FTP</li>
+          <li>Transformation: Python (Pandas), SQL</li>
+          <li>Orchestration: Airflow / cron</li>
+          <li>Storage: Postgres / BigQuery</li>
+        </ul>
+        <div style="margin-top:12px">
+          <a class="btn" href="https://github.com/PLACEHOLDER_GITHUB/etl-repo" target="_blank" rel="noopener">View ETL Code</a>
+          <a class="btn secondary" href="docs/etl_documentation.pdf" target="_blank" rel="noopener">Documentation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Streamlit -->
+    <section id="streamlit" style="margin-top:30px">
+      <h2>Streamlit — Interactive Apps</h2>
+      <p class="small" style="color:var(--muted)">If hosted, your Streamlit app can be embedded here.</p>
+      <div class="card" style="margin-top:12px">
+        <div class="embed">
+          <iframe
+            title="Streamlit app"
+            src="https://share.streamlit.io/PLACEHOLDER_STREAMLIT/app"
+            style="width:100%;height:100%;border:0;"
+            loading="lazy"
+            sandbox="allow-same-origin allow-scripts allow-forms allow-popups">
+          </iframe>
+        </div>
+        <div style="margin-top:12px;display:flex;gap:10px">
+          <a class="btn" href="https://share.streamlit.io/PLACEHOLDER_STREAMLIT/app" target="_blank" rel="noopener">Open App</a>
+          <a class="btn secondary" href="https://github.com/PLACEHOLDER_GITHUB/streamlit-app" target="_blank" rel="noopener">Streamlit Repo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" style="margin-top:30px">
+      <h2>Contact</h2>
+      <p class="small" style="color:var(--muted)">Interested in collaborating? Reach out via the form or email me directly.</p>
+      <div class="contact-grid">
+        <form class="card" action="https://formspree.io/f/PLACEHOLDER_FORM_ID" method="POST">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="your@email.com" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+          <div style="display:flex;gap:10px;margin-top:12px;justify-content:flex-end">
+            <button class="btn" type="submit">Send</button>
+            <button class="btn secondary" type="reset">Clear</button>
+          </div>
+        </form>
+
+        <div class="card">
+          <h3>Direct Contact</h3>
+          <p class="small"><strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+          <p class="small"><strong>GitHub:</strong> <a href="https://github.com/PLACEHOLDER_GITHUB" target="_blank">github.com/PLACEHOLDER_GITHUB</a></p>
+          <p class="small"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/PLACEHOLDER" target="_blank">linkedin.com/in/PLACEHOLDER</a></p>
+          <h4>Downloads</h4>
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <a class="btn" href="https://raw.githubusercontent.com/PLACEHOLDER_GITHUB/MAIN/Ja-Yuan_Pendley_Resume.pdf" target="_blank">Download Resume</a>
+            <a class="btn secondary" href="https://github.com/PLACEHOLDER_GITHUB" target="_blank">View GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Built with ❤️ • © <span id="year"></span> Ja-Yuan Pendley — <span class="small">Data Analyst</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
